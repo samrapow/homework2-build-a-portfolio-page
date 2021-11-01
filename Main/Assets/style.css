@@ -149,18 +149,52 @@ main {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
-      justify-content: space-between;
-      
+      justify-content: space-between;   
+  }
+
+  .sub-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .test-image {
+      width:100%;
   }
 
   .column1 {
       flex: 1 1 20%;
-      margin-bottom: 20px;
   }
 
   .column2 {
       flex: 1 1 80%;
-      margin-bottom: 20px;
+  }
+
+  .column1, .column2 {
+    margin-bottom: 20px;
+  }
+
+  .big-project {
+      flex: 1 1 100%;
+      background-color: red;
+  }
+
+  .small-project {
+      flex: 1 1 44%;
+      background-color: green;
+  }
+
+  .big-project, .small-project {
+      margin-bottom: 2%;
+      margin-right: 5%;
+  }
+
+  /* For mobile, make the nested screens collapse */
+  @media screen and (max-width: 768px) {
+      .big-project, .small-project {
+          flex: 1 1 50%;
+      }
   }
 
   
