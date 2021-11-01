@@ -59,6 +59,7 @@
   header {
     padding: 1rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(86, 138, 158);
@@ -74,8 +75,9 @@
   header nav ul{
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
       min-width: 30rem;
-      text-align: right;
+      /* text-align: right; */
   }
 
   header nav ul li {
@@ -100,22 +102,25 @@
 
 figure #honeycomb {
     width: 100%;
-    height: 14rem;
+    max-height: 14rem;
+    display: flex;
+    margin-bottom: 5rem;
 }
 
 #subtitle {
     position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     bottom: 20px;
     right: 16px;
-    font-size: 3rem;
-    padding: 1rem;
+    font-size: larger;
+    padding: 1%;
     background-color: rgb(86, 138, 158);
 }
   
 main {
-    width: 100%;
-    margin-left: 35rem;
-    margin-right: 10rem;
+    margin-left: 18rem;
   }
 
   
@@ -124,13 +129,6 @@ main {
     text-align: center;
   }
   
-  /* create our main grid with flexbox, use negative margins to offset the padding on the .card-column class */
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    flex: 1 3 100%;
-  } 
 
   .section-header {
       float: left;
@@ -138,46 +136,60 @@ main {
 
   .section-content {
       padding-left: 3rem;
-      border-left: 1rem solid black;
+      border-left: 0.5rem solid black;
   }
 
   #sam-photo {
-      max-width: 50%;
-      max-height: 50%;
+      max-width: 40%;
   }
+  
+  .row {
+      width: 100%;
+
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      
+  }
+
+  .column1 {
+      flex: 1 1 20%;
+      margin-bottom: 20px;
+  }
+
+  .column2 {
+      flex: 1 1 80%;
+      margin-bottom: 20px;
+  }
+
   
   /* using a mobile-first approach, set base column width to be 100% and we'll update it using media queries for larger screen sizes */
-  .card-column {
+  /* .card-column {
     flex: 1 0 100%;
-    padding: 1.5rem;
-    /* when the screen resizes, make it so our columns don't jump in size */
     transition: flex-basis 500ms linear;
-    margin-bottom: 1.5rem;
+    border: 1rem solid blue;
   }
   
-  /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+  using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design
   @media screen and (min-width: 768px) {
-    /* on tablets, set columns to only be 50% of the width and not grow */
     .card-column {
-      flex: 0 0 50%;
+      flex: 0 1 50%;
       max-width: 50%;
     }
   
-    /* select the last child to grow to full width if it has space to grow */
     .card-column:last-child {
       flex-grow: 1;
     }
   }
   
-  /* media query for larger screens */
   @media screen and (min-width: 992px) {
     header {
       width: 100%;
     }
   
     .card-column {
-      flex: 0 0 50%;
-      max-width: 50%;
+      flex: 1 0 50%;
     }
-  }
+  }  */
   
