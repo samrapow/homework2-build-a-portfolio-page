@@ -100,7 +100,7 @@
     color: white;
 }
 
-figure #honeycomb {
+figure #smoke {
     width: 100%;
     max-height: 14rem;
     display: flex;
@@ -159,8 +159,14 @@ main {
     justify-content: space-between;
   }
 
-  .test-image {
+  .big-image {
+      width: 100%
+  }
+
+  .small-image {
       width:100%;
+      max-height: 20rem;
+      /* overflow-y: hidden; */
   }
 
   .column1 {
@@ -177,23 +183,45 @@ main {
 
   .big-project {
       flex: 1 1 100%;
-      background-color: red;
   }
 
   .small-project {
-      flex: 1 1 44%;
-      background-color: green;
+      flex: 1 1 45%;
   }
 
   .big-project, .small-project {
-      margin-bottom: 2%;
-      margin-right: 5%;
+      margin: 1%;
+      border: 0.5rem solid black;
+  }
+
+  .me-link {
+      flex: 1 1 20%;
+      margin: 1%;
+      padding: 3%;
+  }
+
+  .me-link-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .me-link-text {
+      display: block;
+      text-align: center;
+      font-weight: bold;
+      color:var(--bright-turquoise);
   }
 
   /* For mobile, make the nested screens collapse */
   @media screen and (max-width: 768px) {
       .big-project, .small-project {
           flex: 1 1 50%;
+      }
+
+      .me-link {
+          flex: 1 1 100%;
       }
   }
 
