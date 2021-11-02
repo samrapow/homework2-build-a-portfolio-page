@@ -19,16 +19,6 @@
     line-height: 1.5;
   }
   
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin-bottom: 0.625rem;
-    font-weight: 700;
-    line-height: 1.1;
-  }
   
   h1 {
     /* 4rem = 40px (4 * 10px) */
@@ -100,7 +90,7 @@
     color: white;
 }
 
-figure #smoke {
+#smoke {
     width: 100%;
     max-height: 14rem;
     display: flex;
@@ -120,7 +110,7 @@ figure #smoke {
 }
   
 main {
-    margin-left: 18rem;
+    margin-left: 2%;
   }
 
   
@@ -131,7 +121,10 @@ main {
   
 
   .section-header {
-      float: left;
+      text-align: left;
+      padding-left: 1%;
+      padding-right: 5%;
+      color: rgb(68, 57, 57);
   }
 
   .section-content {
@@ -160,45 +153,47 @@ main {
   }
 
   .big-image {
-      width: 100%
+      width: 100%;
+      vertical-align: middle;
   }
 
   .small-image {
       width:100%;
       max-height: 20rem;
+      vertical-align: middle;
       /* overflow-y: hidden; */
-  }
-
-  .column1 {
-      flex: 1 1 20%;
-  }
-
-  .column2 {
-      flex: 1 1 80%;
   }
 
   .column1, .column2 {
     margin-bottom: 20px;
   }
 
-  .big-project {
-      flex: 1 1 100%;
-  }
-
-  .small-project {
-      flex: 1 1 45%;
-  }
+  #project-title {
+    position: absolute;
+    bottom: 2%;
+    left: 4%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: larger;
+    padding: 1%;
+    background-color: rgb(86, 138, 158);
+    text-align: left;
+}
 
   .big-project, .small-project {
-      margin: 1%;
-      border: 0.5rem solid black;
+      border: 0.5rem solid rgb(86, 138, 158);
+      opacity: .5;
+      position: relative;
+      text-align: center;
+      color: white;
   }
 
-  .me-link {
-      flex: 1 1 20%;
-      margin: 1%;
-      padding: 3%;
-  }
+  .big-project:hover, .small-project:hover {
+    opacity: 1;
+}
+
 
   .me-link-row {
     display: flex;
@@ -211,18 +206,92 @@ main {
       display: block;
       text-align: center;
       font-weight: bold;
-      color:var(--bright-turquoise);
+      color:rgb(123, 123, 197);
   }
 
   /* For mobile, make the nested screens collapse */
-  @media screen and (max-width: 768px) {
-      .big-project, .small-project {
-          flex: 1 1 50%;
-      }
+  @media screen {
+    .me-link {
+        flex: 1 1 100%;
+        margin: 1%;
+        padding: 1%;
+    }
 
-      .me-link {
-          flex: 1 1 100%;
-      }
+    .big-project {
+        flex: 1 1 100%;
+        margin: 0 1% 0 1%;
+    }
+  
+    .small-project {
+        flex: 1 1 100%;
+        margin: 1% 1% 0 1%;
+        align-self: center;
+    }
+
+    .column1 {
+        flex: 1 1 100%;
+        align-items: center;
+    }
+  
+    .column2 {
+        flex: 1 1 100%;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .me-link {
+        flex: 1 1 15%;
+        margin: 1%;
+        padding: 1%;
+    }
+
+    .big-project {
+        flex: 1 1 100%;
+        margin: 0 1% 0 1%;
+    }
+  
+    .small-project {
+        flex: 1 1 100%;
+        margin: 1% 1% 0 1%;
+        align-self: center;
+    }
+
+    .column1 {
+        flex: 1 1 20%;
+    }
+  
+    .column2 {
+        flex: 1 1 80%;
+    }
+
+  }
+
+  @media screen and (min-width: 992px) {
+    .me-link {
+        flex: 1 1 15%;
+        margin: 1%;
+        padding: 1%;
+    }
+
+    .big-project {
+        flex: 1 1 100%;
+        margin: 0 1% 0 1%;
+    }
+  
+    .small-project {
+        flex: 1 1 45%;
+        margin: 1% 1% 0 1%;
+        align-self: center;
+    }
+
+    .column1 {
+        flex: 1 1 20%;
+    }
+  
+    .column2 {
+        flex: 1 1 80%;
+    }
+
   }
 
   
