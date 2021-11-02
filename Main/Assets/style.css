@@ -170,8 +170,8 @@ main {
 
   #project-title {
     position: absolute;
-    bottom: 2%;
-    left: 4%;
+    bottom: 0.5rem;
+    left: 0%;
     position: absolute;
     display: flex;
     flex-wrap: wrap;
