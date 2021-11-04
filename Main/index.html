@@ -13,6 +13,7 @@
 
 
   <header>
+    <!-- Create flexbox grid in header -->
     <section class="header-row">
 
       <div class="left-header">
@@ -23,6 +24,7 @@
 
       <div class="right-header">
         <nav>
+            <!-- Create nested flexbox in header so I can adjust navbar -->
             <ul class="header-nav">
               <li class="nav-text"><a href="#about-me" class="nav-text-style">About Me</a></li>
               <li class="nav-text"><a href="#work" class="nav-text-style">Work</a></li>
@@ -33,14 +35,16 @@
     </section>
   </header>
 
+  <!-- Add in image and subtitle underneath header -->
   <figure id="upper-image">
     <img src="Assets/smoke.jpg" alt="smoke-background" id="smoke" />
     <p id="subtitle"> Product Manager Extraordinaire </p>
   </figure>
 
   <main>
+    <!-- Create flexbox grid for main section -->
     <section class="row">
-
+      <!-- Set up 2 column classes, column1 and column2 -->
       <div class="column1">
         <h2 class="section-header" id="about-me">About Me</h2>
       </div>
@@ -48,7 +52,8 @@
       <div class="column2">
         <figure class="section-content" id="about-me-content">
             <img src="Assets/sam_photo.jpg" alt="sam-headshot" id="sam-photo" />
-            <p> Sam has spent the past two years as a Product Manager in Capital One’s innovation lab, where he shipped a new customer authentication tool and has spearheaded various efforts around crypto, gamified credit card rewards, and how Capital One can participate in the payments landscape of the emerging Metaverse. Previously, he worked as a PM for Clutch, an auto tech startup (aquired by Cox Automotive), and graduated from Yale.
+            <p> 
+              Sam has spent the past two years as a Product Manager in Capital One’s innovation lab, where he shipped a new customer authentication tool and has spearheaded various efforts around crypto, gamified credit card rewards, and how Capital One can participate in the payments landscape of the emerging Metaverse. Previously, he worked as a PM for Clutch, an auto tech startup (aquired by Cox Automotive), and graduated from Yale.
                 <br> 
                 <br>
               On the side, Sam has worked on various consumer facing apps: a crowdsourced date idea discovery platform and a mobile-first social commerce platform for watches centered around an ERC-20 token and watch brand communities.  Outside of work and his side-hustles, Sam is a digital community enthusiast and moderates a watch brand community on Reddit. 
@@ -63,8 +68,10 @@
       <div class="column2">
         <figure class="section-content" id="work-content">
 
+          <!-- Create nested flexbox inside this column with 2 types of items -->
             <section class="sub-row">
 
+              <!-- Wrap both image and project title in link -->
                 <div class="big-project">
                     <a target="_blank" href="https://samrapow.github.io/homework1-html-css-git-code-refactor/Develop/index.html">
                         <img src="Assets/jungle.jpg" alt="jungle-background" class="big-image"/>
@@ -128,6 +135,7 @@
         <h2 class="section-header" id="contact-me">Contact Me</h2>
       </div>
 
+      <!-- Create flexbox for links at the bottom -->
       <div class="column2">
         <figure class="section-content" id="contact-me-content">
             <!-- Create a flexgrid with my links -->

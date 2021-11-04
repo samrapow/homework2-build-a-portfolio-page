@@ -1,9 +1,5 @@
-/* color scheme sourced from http://khroma.co/generator/ */
 :root {
-    --outer-space: #33393f;
-    --bright-turquoise: #2aefcb;
-    --gin: #e0eae4;
-    --heliotrope: #e866ec;
+    --cement-blue: rgb(86, 138, 158);
   }
   
   
@@ -13,7 +9,7 @@
   }
   
   body {
-    /* Sans Serif font stack is implemented to help select the best font for each type of computer operating system */
+    /* Set font standards */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.75rem;
     line-height: 1.5;
@@ -37,22 +33,13 @@
     font-size: 2.5rem;
   }
   
-  h5 {
-    font-size: 2rem;
-  }
-  
-  h6 {
-    font-size: 1.5rem;
-  }
-  
-  
   header {
     padding: 1rem;
     /* display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center; */
-    background-color: rgb(86, 138, 158);
+    background-color: var(--cement-blue);
     width: 100%;
   }
 
@@ -91,24 +78,24 @@
 
   .nav-text-style:hover {
     color:goldenrod;
-}
+  }
 
-#upper-image {
-    position: relative;
-    text-align: center;
-    color: white;
-}
+  #upper-image {
+      position: relative;
+      text-align: center;
+      color: white;
+  }
 
-#smoke {
-    width: 100%;
-    max-height: 14rem;
-    display: flex;
-    margin-bottom: 5rem;
-}
+  #smoke {
+      width: 100%;
+      max-height: 14rem;
+      display: flex;
+      margin-bottom: 5rem;
+  }
   
-main {
-    margin-left: 2%;
-}
+  main {
+      margin-left: 2%;
+  }
   
 
   .section-header {
@@ -158,7 +145,7 @@ main {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;   
-}
+  }
 
   .sub-row {
     display: flex;
@@ -196,11 +183,11 @@ main {
     background-color: rgb(86, 138, 158);
     color: whitesmoke;
     text-align: left;
-}
+  }
 
-.project-title:hover {
-  color: goldenrod;
-}
+  .project-title:hover {
+    color: goldenrod;
+  }
 
 
 
@@ -214,7 +201,7 @@ main {
 
   .big-project:hover, .small-project:hover {
     opacity: 1;
-}
+  }
 
 
   .me-link-row {
@@ -272,7 +259,7 @@ main {
       right: 16px;
       padding: 1%;
       background-color: rgb(86, 138, 158);
-  }
+    }
 
     .left-header {
         flex: 1 1 100%;
@@ -353,7 +340,7 @@ main {
       font-size: larger;
       padding: 1%;
       background-color: rgb(86, 138, 158);
-  }
+    }
 
   }
 
@@ -415,42 +402,8 @@ main {
       font-size: larger;
       padding: 1%;
       background-color: rgb(86, 138, 158);
+    }
+    
   }
 
-    /* header nav ul li {
-      font-size: 2rem;
-      flex: 1 1 33%;
-    } */
-
-  }
-
-  
-  /* using a mobile-first approach, set base column width to be 100% and we'll update it using media queries for larger screen sizes */
-  /* .card-column {
-    flex: 1 0 100%;
-    transition: flex-basis 500ms linear;
-    border: 1rem solid blue;
-  }
-  
-  using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design
-  @media screen and (min-width: 768px) {
-    .card-column {
-      flex: 0 1 50%;
-      max-width: 50%;
-    }
-  
-    .card-column:last-child {
-      flex-grow: 1;
-    }
-  }
-  
-  @media screen and (min-width: 992px) {
-    header {
-      width: 100%;
-    }
-  
-    .card-column {
-      flex: 1 0 50%;
-    }
-  }  */
   
