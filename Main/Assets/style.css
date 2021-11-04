@@ -70,12 +70,6 @@
     color: whitesmoke;
   }
   
-  .page-title {
-    padding: 1rem 1.2rem;
-    font-size: 4.5rem;
-    color: whitesmoke;
-    text-align: center;
-  }
 
   /* header nav ul{
       display: flex;
@@ -212,8 +206,15 @@ main {
     font-size: larger;
     padding: 1%;
     background-color: rgb(86, 138, 158);
+    color: whitesmoke;
     text-align: left;
 }
+
+.project-title:hover {
+  color: goldenrod;
+}
+
+
 
   .big-project, .small-project {
       border: 0.5rem solid rgb(86, 138, 158);
@@ -240,6 +241,10 @@ main {
       text-align: center;
       font-weight: bold;
       color:rgb(123, 123, 197);
+  }
+
+  .me-link-text:hover {
+    color:goldenrod;
   }
 
   /* For mobile, make the nested screens collapse */
@@ -282,10 +287,12 @@ main {
       flex: 1 1 100%
     }
 
-    /* header nav ul li {
-      font-size: 2rem;
-      flex: 1 1 100%;
-    } */
+    .page-title {
+      padding: 1rem 1.2rem;
+      font-size: 4.5rem;
+      color: whitesmoke;
+      text-align: center;
+    }
 
   }
 
@@ -329,10 +336,13 @@ main {
       text-align: center;
     }
 
-    /* header nav ul li {
-      font-size: 2rem;
-      flex: 1 1 33%;
-    } */
+    .page-title {
+      padding: 1rem 1.2rem;
+      font-size: 4.5rem;
+      color: whitesmoke;
+      text-align: left;
+      margin-left: 10%;
+    }
 
   }
 
@@ -374,6 +384,14 @@ main {
     .nav-text {
       flex: 1 1 33%;
       text-align: center;
+    }
+
+    .page-title {
+      padding: 1rem 1.2rem;
+      font-size: 4.5rem;
+      color: whitesmoke;
+      text-align: left;
+      margin-left: 10%;
     }
 
     /* header nav ul li {
