@@ -105,18 +105,6 @@
     display: flex;
     margin-bottom: 5rem;
 }
-
-#subtitle {
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    bottom: 20px;
-    right: 16px;
-    font-size: larger;
-    padding: 1%;
-    background-color: rgb(86, 138, 158);
-}
   
 main {
     margin-left: 2%;
@@ -275,6 +263,17 @@ main {
         flex: 1 1 100%;
     }
 
+    #subtitle {
+      position: absolute;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      bottom: 20px;
+      right: 16px;
+      padding: 1%;
+      background-color: rgb(86, 138, 158);
+  }
+
     .left-header {
         flex: 1 1 100%;
     }
@@ -344,6 +343,18 @@ main {
       margin-left: 10%;
     }
 
+    #subtitle {
+      position: absolute;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      bottom: 20px;
+      right: 16px;
+      font-size: larger;
+      padding: 1%;
+      background-color: rgb(86, 138, 158);
+  }
+
   }
 
   @media screen and (min-width: 992px) {
@@ -393,6 +404,18 @@ main {
       text-align: left;
       margin-left: 10%;
     }
+
+    #subtitle {
+      position: absolute;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      bottom: 20px;
+      right: 16px;
+      font-size: larger;
+      padding: 1%;
+      background-color: rgb(86, 138, 158);
+  }
 
     /* header nav ul li {
       font-size: 2rem;
