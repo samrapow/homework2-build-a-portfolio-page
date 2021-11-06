@@ -1,8 +1,7 @@
 :root {
     --cement-blue: rgb(86, 138, 158);
-  }
-  
-  
+}
+
   html {
     /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
     font-size: 62.5%;
@@ -35,118 +34,92 @@
   
   header {
     padding: 1rem;
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center; */
     background-color: var(--cement-blue);
     width: 100%;
   }
 
-  footer {
-    padding: 1rem;
+  /* initiate flexbox */
+  .header-row {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(86, 138, 158);
-    width: 100%;
+    text-align: center;   
   }
 
-  footer h4 {
-    color: whitesmoke;
+  /* initiate flexbox */
+  .header-nav {
+    height:100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
   }
-  
-
-  /* header nav ul{
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      text-align: center;
-  } */
-
-  /* header nav ul li {
-      font-size: 2rem;
-      flex: 1 1 33%;
-  } */
 
   .nav-text-style {
-      color: whitesmoke;
-      font-weight: bold;
-      font-size: 2rem;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 2rem;
   }
 
   .nav-text-style:hover {
     color:goldenrod;
   }
 
+  /* initiate image to put text on it */
   #upper-image {
-      position: relative;
-      text-align: center;
-      color: white;
+    position: relative;
+    text-align: center;
+    color: white;
   }
 
+  /* keep image at 100% width */
   #smoke {
-      width: 100%;
-      max-height: 14rem;
-      display: flex;
-      margin-bottom: 5rem;
+    width: 100%;
+    max-height: 14rem;
+    display: flex;
+    margin-bottom: 5rem;
   }
   
+  /* add left margin across main flexbox */
   main {
-      margin-left: 2%;
-  }
-  
-
-  .section-header {
-      text-align: left;
-      padding-left: 1%;
-      padding-right: 5%;
-      margin-left: 10%;
-      color: rgb(68, 57, 57);
+    margin-left: 2%;
   }
 
-  .section-content {
-      padding-left: 3rem;
-      border-left: 0.5rem solid black;
-  }
-
-  #sam-photo {
-      max-width: 30%;
-  }
-  
-  .header-row {
-      width: 100%;
-      /* min-height: 100vh; */
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      text-align: center;   
-  }
-
-  .header-nav {
-      height:100%;
-
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: space-between;
-      /* margin: 1%; */
-      /* background-color: red; */
-      /* text-align: right;  */
-  }
-
+  /* create big flexbox container */
   .row {
     width: 100%;
-
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;   
   }
 
+  .column1, .column2 {
+    margin-bottom: 20px;
+  }
+  
+  /* align left to look better when in mobile */
+  .section-header {
+    text-align: left;
+    padding-left: 1%;
+    padding-right: 5%;
+    margin-left: 10%;
+    color: var(--cement-blue);
+  }
+
+  .section-content {
+    padding-left: 3rem;
+    border-left: 0.5rem solid black;
+  }
+
+  #sam-photo {
+    max-width: 30%;
+  }
+
+  /* create sub-container */
   .sub-row {
     display: flex;
     flex-wrap: wrap;
@@ -154,33 +127,38 @@
     justify-content: space-between;
   }
 
-  .big-image {
-      width: 100%;
-      vertical-align: middle;
+  /* initiate to put text on top of */
+  .big-project, .small-project {
+    border: 0.5rem solid var(--cement-blue);
+    opacity: .5;
+    position: relative;
+    text-align: center;
+    color: white;
   }
 
+  .big-image {
+    width: 100%;
+    vertical-align: middle;
+  }
+
+  /* vertical align to keep white space from showing */
   .small-image {
       width:100%;
       max-height: 20rem;
       vertical-align: middle;
-      /* overflow-y: hidden; */
   }
 
-  .column1, .column2 {
-    margin-bottom: 20px;
-  }
-
+  /* add title onto project pictures in bottom left */
   .project-title {
     position: absolute;
     bottom: 0.5rem;
     left: 0%;
-    position: absolute;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     font-size: larger;
     padding: 1%;
-    background-color: rgb(86, 138, 158);
+    background-color: var(--cement-blue);
     color: whitesmoke;
     text-align: left;
   }
@@ -189,21 +167,11 @@
     color: goldenrod;
   }
 
-
-
-  .big-project, .small-project {
-      border: 0.5rem solid rgb(86, 138, 158);
-      opacity: .5;
-      position: relative;
-      text-align: center;
-      color: white;
-  }
-
   .big-project:hover, .small-project:hover {
     opacity: 1;
   }
 
-
+  /* initiate flexbox for bottom links */
   .me-link-row {
     display: flex;
     flex-wrap: wrap;
@@ -222,104 +190,94 @@
     color:goldenrod;
   }
 
+  footer {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cement-blue);
+    width: 100%;
+  }
+
+  footer h4 {
+    color: whitesmoke;
+  }
+
   /* For mobile, make the nested screens collapse */
   @media screen {
-    .me-link {
-        flex: 1 1 100%;
-        margin: 1%;
-        padding: 1%;
-    }
-
-    .big-project {
-        flex: 1 1 100%;
-        margin: 0 1% 0 0;
-    }
-  
-    .small-project {
-        flex: 1 1 100%;
-        margin: 1% 1% 0 0;
-        align-self: center;
-    }
-
-    .column1 {
-        flex: 1 1 100%;
-        align-items: center;
-    }
-  
-    .column2 {
-        flex: 1 1 100%;
-    }
-
-    #subtitle {
-      position: absolute;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      bottom: 20px;
-      right: 16px;
-      padding: 1%;
-      background-color: rgb(86, 138, 158);
-    }
 
     .left-header {
-        flex: 1 1 100%;
+      flex: 1 1 100%;
     }
 
+    /* center page title in mobile view */
+    .page-title {
+      padding: 1rem 1.2rem;
+      font-size: 4.5rem;
+      color: whitesmoke;
+      text-align: center;
+    }
+
+    /* Make nav bar go under page title */
     .right-header {
-        flex: 1 1 100%;
+      flex: 1 1 100%;
     }
-
+    
+    /* make nav bar stack in column */
     .nav-text {
       flex: 1 1 100%
     }
 
-    .page-title {
-      padding: 1rem 1.2rem;
-      font-size: 4.5rem;
-      color: whitesmoke;
-      text-align: center;
+    /* Make subtitle smaller in mobile */
+    #subtitle {
+      position: absolute;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      bottom: 20px;
+      right: 16px;
+      padding: 1%;
+      background-color: var(--cement-blue);
+    }
+
+    /* make column1 and column2 stack */
+    .column1 {
+      flex: 1 1 100%;
+      align-items: center;
+    }
+
+    .column2 {
+      flex: 1 1 100%;
+    }
+
+    .big-project {
+      flex: 1 1 100%;
+      margin: 0 1% 0 0;
+    }
+
+    /* make small projects stack */
+    .small-project {
+      flex: 1 1 100%;
+      margin: 1% 1% 0 0;
+      align-self: center;
+    }
+
+    /* make links at bottom stack in mobile */
+    .me-link {
+      flex: 1 1 100%;
+      margin: 1%;
+      padding: 1%;
     }
 
   }
 
+  /* tablet view size */
   @media screen and (min-width: 768px) {
-    .me-link {
-        flex: 1 1 15%;
-        margin: 1%;
-        padding: 1%;
-    }
 
-    .big-project {
-        flex: 1 1 100%;
-        margin: 0 1% 0 0;
-    }
-  
-    .small-project {
-        flex: 1 1 100%;
-        margin: 1% 1% 0 0;
-        align-self: center;
-    }
-
-    .column1 {
-        flex: 1 1 20%;
-    }
-  
-    .column2 {
-        flex: 1 1 80%;
-    }
-
+    /* keep headers from stacking in tablet view */
     .left-header {
       flex: 1 1 50%;
-    }
-
-    .right-header {
-      flex: 1 1 50%;
-      text-align: right;
-    }
-
-    .nav-text {
-      flex: 1 1 33%;
-      text-align: center;
     }
 
     .page-title {
@@ -330,6 +288,18 @@
       margin-left: 10%;
     }
 
+    .right-header {
+      flex: 1 1 50%;
+      text-align: right;
+    }
+
+    /* keep nav links in a row */
+    .nav-text {
+      flex: 1 1 33%;
+      text-align: center;
+    }
+
+    /* make subtitle bigger */
     #subtitle {
       position: absolute;
       display: flex;
@@ -339,39 +309,52 @@
       right: 16px;
       font-size: larger;
       padding: 1%;
-      background-color: rgb(86, 138, 158);
+      background-color: var(--cement-blue);
+    }
+
+    /* make column1 20% of width and column2 80% */
+    .column1 {
+      flex: 1 1 20%;
+    }
+
+    .column2 {
+      flex: 1 1 80%;
+    }
+
+    .big-project {
+        flex: 1 1 100%;
+        margin: 0 1% 0 0;
+    }
+  
+    /* make small projects stack in tablet mode */
+    .small-project {
+        flex: 1 1 100%;
+        margin: 1% 1% 0 0;
+        align-self: center;
+    }
+
+    /* make links at bottom in row */
+    .me-link {
+      flex: 1 1 15%;
+      margin: 1%;
+      padding: 1%;
     }
 
   }
 
+  /* full size desktop view size */
   @media screen and (min-width: 992px) {
-    .me-link {
-        flex: 1 1 15%;
-        margin: 1%;
-        padding: 1%;
-    }
-
-    .big-project {
-        flex: 1 1 100%;
-        margin: 0 1% 0 0;
-    }
-  
-    .small-project {
-        flex: 1 1 45%;
-        margin: 1% 1% 0 0;
-        align-self: center;
-    }
-
-    .column1 {
-        flex: 1 1 20%;
-    }
-  
-    .column2 {
-        flex: 1 1 80%;
-    }
 
     .left-header {
       flex: 1 1 50%;
+    }
+
+    .page-title {
+      padding: 1rem 1.2rem;
+      font-size: 4.5rem;
+      color: whitesmoke;
+      text-align: left;
+      margin-left: 10%;
     }
 
     .right-header {
@@ -384,14 +367,6 @@
       text-align: center;
     }
 
-    .page-title {
-      padding: 1rem 1.2rem;
-      font-size: 4.5rem;
-      color: whitesmoke;
-      text-align: left;
-      margin-left: 10%;
-    }
-
     #subtitle {
       position: absolute;
       display: flex;
@@ -401,7 +376,33 @@
       right: 16px;
       font-size: larger;
       padding: 1%;
-      background-color: rgb(86, 138, 158);
+      background-color: var(--cement-blue);
+    }
+
+    .column1 {
+      flex: 1 1 20%;
+    }
+
+    .column2 {
+      flex: 1 1 80%;
+    }
+
+    .big-project {
+      flex: 1 1 100%;
+      margin: 0 1% 0 0;
+    }
+
+    /* make small projects have 2 to each row */
+    .small-project {
+      flex: 1 1 45%;
+      margin: 1% 1% 0 0;
+      align-self: center;
+    }
+
+    .me-link {
+      flex: 1 1 15%;
+      margin: 1%;
+      padding: 1%;
     }
     
   }
