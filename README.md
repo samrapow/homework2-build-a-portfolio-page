@@ -2,7 +2,7 @@
 
 ## Description
 
-This is my portfolio website that I build using HTML and CSS.  The website contains three sections: an about me, my work, and a contact me section.  The website is build with flexbox and resizes dynamically for desktop, tablet, and mobile viewing.  
+This is my portfolio website that I built using HTML and CSS.  The website contains three sections: an about me, my work, and a contact me section.  The website is build with flexbox and resizes dynamically for desktop, tablet, and mobile viewing.  
 
 ## Screenshot
 
